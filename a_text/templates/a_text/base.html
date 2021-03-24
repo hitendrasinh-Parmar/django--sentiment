@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="{% static 'a_text/css/bootstrap.css' %}">
+	<title>Document</title>
+</head>
+<body class="bg-muted">
+	<h3 class="alert alert-light text-center text-bold">TEXT ANALYSIS</h3>
+	{% block content %}
+
+
+	{% endblock content %}
+
+	<script src="{% static 'a_text/js/jquery.js' %}"></script>
+	<script src="{% static 'a_text/js/popper.js' %}"></script>
+	<script src="{% static 'a_text/js/bootstrap.js' %}"></script>
+</body>
+</html>
