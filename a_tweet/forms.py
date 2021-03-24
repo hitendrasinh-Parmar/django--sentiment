@@ -10,7 +10,6 @@ class AnalyzeTweets(forms.ModelForm):
 			'topic':forms.TextInput(attrs={'class':'form-control'}),
 			'no_tweets':forms.NumberInput(attrs={'class':'form-control'}),
 		}
-
 		labels={
 			'topic':'Enter Topic',
 			'no_tweets':'Number of Tweets to analyze'

@@ -4,6 +4,9 @@ nav>ul>li>a:hover{
 	border-bottom: #DCE1E9;
 }
 
+.django-ckeditor-widget{
+	width: 50%;
+  }
 /* body {
     background: linear-gradient(235deg, #6ae9c8, #b6e96a);
     background-size: 400% 400%;
@@ -242,4 +245,6 @@ body {
 	/*header ends*/
   }
   
+  
+
   

@@ -1,21 +1,21 @@
 {% extends 'a_text/welcome.html' %}
 
 {% block content %}
-<div class="row m-5">
+<div class="container d-flex justify-content-center align-items-center">
 
-	<div class="col-sm-3">
-		<h4 class="alert bg-secondary bg-rounded text-white text-center">Input Data</h4>
-		<form action="" method="POST">
+	<div class="">
+		<h4 class="alert bg-transparent bg-rounded text-white text-center">Input Data</h4>
+		<form action="" method="POST" >
 			{% csrf_token %}
 			{{form.as_p}}
 			<input type="submit" value="Analyze" class="btn btn-primary">
 		</form>
 	</div>
 	<!-- --------------------------------------- -->
-	<div class="col-sm-8 offset-1">
-		<h4 class="alert bg-secondary border-rounded text-white text-center">Recents</h4>
+	<div class="">
+		<h4 class="alert bg-transparent border-rounded text-white text-center">Recents</h4>
 		{% if InputData %}
-			<table class="table table-hover">
+			<table class="table table-hover text-muted lead">
 			  <thead>
 			    <tr>
 			      <th scope="col">ID</th>
